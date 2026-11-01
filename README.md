@@ -14,9 +14,9 @@
 
 ---
 
-Instead of scrolling past a list of projects, you query them. Every entry is a row
-with tags, a date and a status; the detail pane is always there, and the keyboard
-works. It is the only concept here that behaves like a tool rather than a page.
+Instead of scrolling a list of projects, you filter it. Every entry is a row with tags
+and a date, the detail pane is part of the page, and the keyboard works. It is the one
+concept here that behaves like a tool.
 
 ## What is in here
 
@@ -38,14 +38,13 @@ python3 -m http.server 8000
 
 ## What it demonstrates
 
-- **A filter that is honest.** Typing narrows rows live, and an empty result says
-  "nothing matches that filter" instead of silently showing a blank area.
+- **A filter that says when nothing matches**, instead of leaving a blank area.
 - **Keyboard navigation** — arrows or `j`/`k` move the selection and update the
   detail pane, `enter` opens the record's link, `escape` clears the query. The focus
   ring is never removed without a replacement.
-- **A detail pane that does not reflow the page** — open an entry and the layout
-  holds still, because reading should not involve re-finding your place.
-- **Numbers set in tabular figures**, so columns line up the way a ledger's should.
+- **A detail pane that does not reflow the page.** Open an entry and the layout holds
+  still.
+- **Tabular figures**, so the columns line up.
 
 ## Related
 
